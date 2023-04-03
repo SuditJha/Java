@@ -5,8 +5,8 @@ public class Calculator {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter two Numbers :");
-        int x=sc.nextInt();
-        int y=sc.nextInt();
+        double x=sc.nextInt();
+        double y=sc.nextInt();
         System.out.println("Enter operation : + - * /");
         char op=sc.next().charAt(0);
         if(op=='+')
