@@ -18,6 +18,21 @@ public class ArrayCompareTest {
 		assertArrayEquals(expected, actual);
 	}
 	
+	@Test(expected=NullPointerException.class)
+	public void testArraySort_NullArray() {
+		int[] arr = null;
+		Arrays.sort(arr);
+	}
+	
+	
+	@Test(timeout=100)
+	public void testSort_Performance() {
+		int[] arr = {12,345,67,28};
+		for(int i = 0; i < 1000000; i++) {
+			arr[2] = i;
+			Arrays.sort(arr);
+		}
+	}
 	
 
 }
