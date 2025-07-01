@@ -2,10 +2,16 @@ package com.in28minutes.junit.helper;
 
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class StringHelperTest {
-	StringHelper helper = new StringHelper();
+	StringHelper helper;
+	
+	@Before
+	public void setup() {
+		helper = new StringHelper();
+	}
 	@Test
 	public void testTruncateAInFirst2Positions_AInFirst2Position() {
 	
